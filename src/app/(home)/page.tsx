@@ -1,5 +1,15 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
 const HomePage = () => {
-  return <main>메인 페이지</main>;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/aboutus");
+  }, [router]);
+
+  return <main></main>;
 };
 
 export default HomePage;
