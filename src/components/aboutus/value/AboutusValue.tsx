@@ -1,9 +1,9 @@
-import LogoIcon from "@/images/inglo_logo.svg";
 import AboutusValueCard from "./AboutusValueCard";
 import CreativeIcon from "@/icons/creative_icon.svg";
 import ChallengeIcon from "@/icons/challenge_icon.svg";
 import SocialIcon from "@/icons/social_icon.svg";
 import CooperationIcon from "@/icons/cooperation_icon.svg";
+import OurValueTitleImage from "@/images/our_value_title.svg";
 
 /**
  * @description
@@ -68,12 +68,10 @@ const AboutusValue = () => {
   return (
     <section className="flex flex-col justify-center items-center gap-[3rem] py-[6.25rem] px-[9rem]">
       <div className="flex flex-col justify-center items-center gap-[1.5rem]">
-        <div className="flex items-center gap-[1.5rem]">
-          <LogoIcon width={50} height={52} />
-          <h3 className="text-[3rem] font-bold text-deep_gray">
-            우리의 핵심 가치
-          </h3>
-        </div>
+        <OurValueTitleImage />
+        <h3 className="text-[3rem] font-bold text-deep_gray">
+          우리의 핵심 가치
+        </h3>
         <p className="text-[1.5rem] font-medium  text-deep_gray">
           "작은 코드로 시작해 큰 변화를 만듭니다.함께 꿈꾸고, 함께 도전하며,
           함께 성장해요!"

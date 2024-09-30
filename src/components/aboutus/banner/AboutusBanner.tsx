@@ -14,11 +14,9 @@ import LogoIcon from "@/images/inglo_logo.svg";
 
 const AboutusBanner = () => {
   return (
-    <section className="flex flex-col justify-items-center items-center gap-[1.5rem] py-[10.25rem] bg-light_green">
-      <div className="flex items-center gap-[1.5rem]">
-        <LogoIcon width={70} height={70} />
-        <h1 className="text-[4rem] text-light_black font-bold">About Us</h1>
-      </div>
+    <section className="flex flex-col justify-items-center items-center gap-[0.5rem] py-[4.25rem] bg-light_green">
+      <LogoIcon width={70} height={70} />
+      <h1 className="text-[4rem] text-light_black font-bold">About Us</h1>
       <p className="text-[2rem] text-black leading-[3.75rem]">
         Inglo Team에 대해 소개합니다!
       </p>
