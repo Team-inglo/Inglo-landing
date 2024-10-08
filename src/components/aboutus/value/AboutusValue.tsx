@@ -3,7 +3,6 @@ import CreativeIcon from "@/icons/creative_icon.svg";
 import ChallengeIcon from "@/icons/challenge_icon.svg";
 import SocialIcon from "@/icons/social_icon.svg";
 import CooperationIcon from "@/icons/cooperation_icon.svg";
-import OurValueTitleImage from "@/images/our_value_title.svg";
 
 /**
  * @description
@@ -68,7 +67,11 @@ const AboutusValue = () => {
   return (
     <section className="flex flex-col justify-center items-center gap-[3rem] py-[6.25rem] px-[9rem]">
       <div className="flex flex-col justify-center items-center gap-[1.5rem]">
-        <OurValueTitleImage />
+        <div className="flex justify-center items-center w-[12.438rem] h-[2.563rem] bg-cover bg-center bg-[url('/images/title_frame.svg')]">
+          <h1 className="pt-[0.1rem] text-[1.25rem] font-semibold text-primary">
+            ✦ Our Value ✦
+          </h1>
+        </div>
         <h3 className="text-[3rem] font-bold text-deep_gray">
           우리의 핵심 가치
         </h3>

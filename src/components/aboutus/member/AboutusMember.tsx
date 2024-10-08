@@ -1,6 +1,5 @@
 "use client";
 
-import MemberTitleImage from "@/images/members_title.svg";
 import AboutusMemberCard from "./AboutusMemberCard";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
@@ -120,7 +119,11 @@ const AboutusMember = () => {
   return (
     <section className="flex flex-col justify-center items-center gap-[3rem] py-[6.25rem]">
       <div className="flex flex-col justify-center items-center gap-[1.5rem]">
-        <MemberTitleImage />
+        <div className="flex justify-center items-center w-[12.438rem] h-[2.563rem] bg-cover bg-center bg-[url('/images/title_frame.svg')]">
+          <h1 className="pt-[0.1rem] text-[1.25rem] font-semibold text-deep_gray">
+            ✦ Members ✦
+          </h1>
+        </div>
         <h3 className="text-[3rem] font-bold text-deep_gray">
           Inglo 팀원들을 소개합니다
         </h3>
