@@ -42,6 +42,7 @@ const HomeProject = () => {
               bgColor="bg-secondary"
               textColor="text-black"
               label="서비스 보러가기"
+              marginTop="mt-[48px]"
             />
           </div>
         </div>

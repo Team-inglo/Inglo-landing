@@ -21,12 +21,13 @@ const HomeBlog = () => {
         <div className="w-[1152px] rounded-[80px] flex flex-col justify-center items-center py-[80px] bg-white gap-[40px]">
           <BlogTextSection />
 
-          <Image src={Icons} alt="icons" className="w-[1120px] mb-[50px]" />
+          <Image src={Icons} alt="icons" className="w-[1120px]" />
 
           <Button
             bgColor="bg-primary"
             textColor="text-white_900"
             label="블로그 보러가기"
+            marginTop="mt-[50px]"
           />
         </div>
       </div>

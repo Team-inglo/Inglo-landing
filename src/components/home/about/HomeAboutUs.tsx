@@ -36,6 +36,7 @@ const HomeAboutUs = () => {
             bgColor="bg-primary"
             textColor="text-white_900"
             label="About us"
+            marginTop="mt-[24px]"
           />
         </div>
         <Image src={TagImg} alt="tag" className="w-[576px] h-[345px]" />
