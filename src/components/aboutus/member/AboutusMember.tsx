@@ -120,7 +120,7 @@ const AboutusMember = () => {
     <section className="flex flex-col justify-center items-center gap-[3rem] py-[6.25rem]">
       <div className="flex flex-col justify-center items-center gap-[1.5rem]">
         <div className="flex justify-center items-center w-[12.438rem] h-[2.563rem] bg-cover bg-center bg-[url('/images/title_frame.svg')]">
-          <h1 className="pt-[0.1rem] text-[1.25rem] font-semibold text-deep_gray">
+          <h1 className="text-[1.25rem] font-semibold text-deep_gray">
             ✦ Members ✦
           </h1>
         </div>

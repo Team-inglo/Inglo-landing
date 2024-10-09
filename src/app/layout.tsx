@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "../styles/reset.css";
-import { geistMono, geistSans } from "./fonts";
+import { pretendard } from "./fonts";
 import Footer from "@/components/common/footer/Footer";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -21,9 +21,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className="text-[16px]">
+    <html lang="ko" className={`text-[16px] ${pretendard.variable}`}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen w-full`}
+        className={`${pretendard.className} antialiased min-h-screen w-full`}
       >
         {children}
         <Footer />
