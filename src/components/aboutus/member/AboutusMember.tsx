@@ -14,6 +14,7 @@ import ProfileImage7 from "@/images/profile/정은지_프로필.png";
 import ProfileImage8 from "@/images/profile/장동겸_프로필.jpeg";
 import ProfileImage9 from "@/images/profile/김현진_프로필.jpeg";
 import ProfileImage10 from "@/images/profile/문지원_프로필.jpeg";
+import ProfileImage11 from "@/images/profile/강승준_프로필.jpeg";
 import { StaticImageData } from "next/image";
 
 /**
@@ -39,73 +40,80 @@ interface memberListType {
 const memberList = [
   {
     profile: ProfileImage1,
-    keyword: "새초롬 디자이너",
+    keyword: "#차나핑",
     name: "한은서",
-    position: "디자인",
-    introduce: "안녕하세요!",
+    position: "DESIGN",
+    introduce: "디자인은 나의 발자취, 나는 흔적을 남긴다",
   },
   {
     profile: ProfileImage2,
-    keyword: "새초롬 디자이너",
+    keyword: "#다람쥐 힙합퍼",
     name: "윤혜정",
-    position: "디자인",
-    introduce: "안녕하세요!",
+    position: "DESIGN",
+    introduce: "인생사 새옹지마",
   },
   {
     profile: ProfileImage3,
-    keyword: "활발한 마케터",
+    keyword: "#활기참",
     name: "박예선",
-    position: "마케팅",
-    introduce: "안녕하세요!",
+    position: "MARKETING",
+    introduce: "다양한 문화를 좋아하고 도전을 즐깁니다.",
   },
   {
     profile: ProfileImage4,
-    keyword: "웃음많은 개발자",
+    keyword: "#웃음",
     name: "이나경",
-    position: "프론트",
+    position: "FRONT-END",
     introduce: "새로운 기회마다 즐겁게 도전하는 개발자입니다.",
   },
   {
     profile: ProfileImage5,
-    keyword: "펠리컨적 사고 개발자",
+    keyword: "#펠리컨적 사고",
     name: "한우준",
-    position: "프론트",
+    position: "FRONT-END",
     introduce: "연결을 통해 가치 실현을 돕는 개발자입니다.",
   },
   {
     profile: ProfileImage6,
-    keyword: "행운있는 개발자",
+    keyword: "#행운",
     name: "설현아",
-    position: "프론트",
+    position: "FRONT-END",
     introduce: "불가능한 일은 없다.",
   },
   {
     profile: ProfileImage7,
-    keyword: "똘똘한 리더",
+    keyword: "#예술가",
     name: "정은지",
-    position: "백엔드",
-    introduce: "안녕하세요!",
+    position: "BACK-END",
+    introduce: "새로운 아이디어와 협업을 좋아하는 개발자",
   },
   {
     profile: ProfileImage8,
-    keyword: "바쁜 개발자",
+    keyword: "#사글사글함",
     name: "장동겸",
-    position: "백엔드",
-    introduce: "안녕하세요!",
+    position: "BACK-END",
+    introduce: "몸을 갈아넣는걸 좋아하는 책임감있는 개발자",
+  },
+  {
+    profile: ProfileImage11,
+    keyword: "#유쾌함",
+    name: "강승준",
+    position: "BACK-END",
+    introduce: "언제나 재밌게 개발하는 공룡을 좋아하는 개발자",
   },
   {
     profile: ProfileImage9,
-    keyword: "행복한 AI",
+    keyword: "#도전",
     name: "김현진",
     position: "AI",
-    introduce: "안녕하세요!",
+    introduce: "설명가능한 개발을 좋아합니다. ",
   },
   {
     profile: ProfileImage10,
-    keyword: "오뚝이 AI",
+    keyword: "#오뚝이",
     name: "문지원",
     position: "AI",
-    introduce: "이야기를 만들어가는 사람",
+    introduce: "이야기를 개척해나가는 사람",
   },
 ];
 
@@ -117,9 +125,9 @@ for (let i = 0; i < memberList.length; i += 3) {
 const AboutusMember = () => {
   SwiperCore.use([Autoplay]);
   return (
-    <section className="flex flex-col justify-center items-center gap-[3rem] py-[6.25rem]">
+    <section className="flex flex-col justify-center items-center gap-[3rem] py-[6.25rem] bg-primary">
       <div className="flex flex-col justify-center items-center gap-[1.5rem]">
-        <div className="flex justify-center items-center w-[12.438rem] h-[2.563rem] bg-cover bg-center bg-[url('/images/title_frame.svg')]">
+        <div className="flex justify-center items-center w-[12.438rem] h-[2.563rem] bg-cover bg-center bg-[url('/images/title_light_frame.svg')]">
           <h1 className="text-[1.25rem] font-semibold text-deep_gray">
             ✦ Members ✦
           </h1>

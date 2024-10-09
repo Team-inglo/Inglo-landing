@@ -16,7 +16,7 @@ const AboutusBanner = () => {
   return (
     <section className="flex flex-col justify-items-center items-center gap-[0.5rem] py-[4.25rem] bg-light_green">
       <LogoIcon width={70} height={70} />
-      <h1 className="text-[4rem] text-light_black font-bold">About Us</h1>
+      <h1 className="text-[4rem] text-light_black font-bold">About us</h1>
       <p className="text-[2rem] text-black leading-[3.75rem]">
         Inglo Team에 대해 소개합니다!
       </p>

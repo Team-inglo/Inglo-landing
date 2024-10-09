@@ -18,7 +18,7 @@ interface AboutusValueCardProps {
 
 const AboutusValueCard = ({ icon, title, content }: AboutusValueCardProps) => {
   return (
-    <div className="p-[4rem] flex flex-col justify-center gap-[1.5rem] rounded-[1.25rem] shadow-card_green">
+    <div className="p-[4rem] flex flex-col justify-center gap-[1.5rem] rounded-[1.25rem] border-solid border-primary border-[1px]">
       {icon}
       <h6 className="text-[1.75rem] text-deep_gray font-bold">{title}</h6>
       <p className="text-base text-deep_gray">{content}</p>

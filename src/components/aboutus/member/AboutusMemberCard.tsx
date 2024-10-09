@@ -37,16 +37,16 @@ const AboutusMemberCard = ({
         priority
       />
       <div className="w-full px-[2rem] py-[1.5rem]">
-        <p className=" text-primary text-sm font-semibold">{keyword}</p>
         <div className="flex justify-between items-center py-[0.5rem]">
           <h3 className="text-deep_gray font-semibold text-[1.75rem] leading-[2.5rem]">
             {name}
           </h3>
-          <div className="flex justify-center items-center py-[0.75rem] px-[2rem] border border-primary border-solid rounded-[3.125rem]  text-primary font-semibold text-xs">
+          <div className="flex justify-center items-center min-w-[5rem] py-[0.75rem] px-[1rem] border border-primary border-solid rounded-[3.125rem]  text-primary font-semibold text-xs">
             {position}
           </div>
         </div>
-        <p className="pb-[1.5rem] text-deep_gray text-base">{introduce}</p>
+        <p className=" text-deep_gray text-base">{introduce}</p>
+        <p className="pb-[1.5rem] text-primary text-base">{keyword}</p>
         {/* <GithubIcon /> */}
       </div>
     </div>
