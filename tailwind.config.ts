@@ -25,7 +25,8 @@ const config: Config = {
         green_200: "#95FFD6",
         yellow_50: "#fffceb",
         yellow_950: "#3d3500",
-        light_brown: "rgba(61, 53, 0, 0.24)"
+        light_brown: "rgba(61, 53, 0, 0.24)",
+        light_blue: "rgba(0, 61, 38, 0.24)",
       },
       boxShadow: {
         card_green: "0px 0px 10px rgba(0, 235, 144, 0.40)",

@@ -20,8 +20,8 @@ const AboutUsTextBlock = () => {
 
 const HomeAboutUs = () => {
   return (
-    <section className="flex items-center justify-center">
-      <div className="w-[1440px] flex items-center justify-start p-card_padding">
+    <section className="flex items-center justify-center p-card_padding">
+      <div className="w-[1440px] flex items-center justify-center pt-[90px] pb-[100px]">
         <div className="flex flex-col items-start w-[576px] gap-[30px]">
           <div>
             <h1 className="text-green_200 text-[48px] leading-[60px] font-extrabold">
