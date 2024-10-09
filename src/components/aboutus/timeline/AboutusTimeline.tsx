@@ -15,7 +15,7 @@ import TimelineContent from "@/images/timeline_content.svg";
 const AboutusTimeline = () => {
   return (
     <>
-      <section className="flex flex-col justify-center items-center py-[6.25rem] px-[9rem] bg-cover bg-no-repeat bg-[url('/images/timeline_bg.svg')]">
+      <section className="flex flex-col justify-center items-center py-[6.25rem] px-[9rem] bg-gradient-to-b from-[#FFFFFF] to-[#EBFFF7]">
         <div className="flex flex-col justify-center items-center gap-[1.5rem]">
           <div className="flex justify-center items-center w-[12.438rem] h-[2.563rem] bg-cover bg-center bg-[url('/images/title_frame.svg')]">
             <h1 className="text-[1.25rem] font-semibold text-primary">
