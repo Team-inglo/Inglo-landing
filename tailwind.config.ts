@@ -40,7 +40,7 @@ const config: Config = {
       backgroundImage: {
         blue_gradient: 'linear-gradient(180deg, #7289F7 0.67%, #69F3BE 51.32%, #FFF 99.98%)',
         yellow_gradient: 'linear-gradient(180deg, #FFF6C0 0%, #FFEB6A 100%)',
-        'gradient-radial': 'radial-gradient(45.82% 45.83% at 50% 50%, #FFF6C0 0%, #FFF 100%), #FFF)',
+        button_gradient: 'linear-gradient(102deg, #3F5EF4 0%, #00EB90 100%)',
       },
       padding: {
         card_padding: '90px 144px 100px 144px'
