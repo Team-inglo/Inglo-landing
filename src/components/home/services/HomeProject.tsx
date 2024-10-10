@@ -25,7 +25,7 @@ const TextSection = () => (
 const HomeProject = () => {
   return (
     <section className="flex items-center justify-center bg-yellow_50 p-card_padding">
-      <div className="w-[1440px] flex items-center justify-start py-[100px]">
+      <div className="w-[1440px] flex items-center justify-center py-[100px]">
         <div className="flex items-center gap-[50px]">
           <Image
             src={GiggleCard}
