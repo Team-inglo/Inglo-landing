@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ValuedImg from "@/images/project/value.png";
+import ValueImg from "@/images/project/value.png";
 import Title from "@/images/project/project_title.svg";
 
 const ProjectValue = () => {
@@ -22,7 +22,7 @@ const ProjectValue = () => {
             섬세하고 직접적으로 도와줍니다.
           </div>
         </div>
-        <Image src={ValuedImg} alt="img" className="w-[450px]" />
+        <Image src={ValueImg} alt="img" className="w-[450px]" />
       </div>
     </section>
   );

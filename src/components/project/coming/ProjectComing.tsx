@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Title from "@/images/project/project_title.svg";
-import GiggleCard1 from "@/images/project/gigle_card_1.png";
-import GiggleCard2 from "@/images/project/gigle_card_1.png";
+import GiggleCard1 from "@/images/project/giggle_card_1.png";
+import GiggleCard2 from "@/images/project/giggle_card_2.png";
 
 const ProjectComing = () => {
   return (
