@@ -37,6 +37,7 @@ const HomeAboutUs = () => {
             textColor="text-white_900"
             label="About us"
             marginTop="mt-[24px]"
+            link="/aboutus"
           />
         </div>
         <Image src={TagImg} alt="tag" className="w-[576px] h-[345px]" />

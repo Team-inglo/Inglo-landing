@@ -43,6 +43,7 @@ const HomeProject = () => {
               textColor="text-black"
               label="서비스 보러가기"
               marginTop="mt-[48px]"
+              link="/project"
             />
           </div>
         </div>

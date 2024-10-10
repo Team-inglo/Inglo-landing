@@ -8,6 +8,7 @@ interface ContactCardProps {
   buttonLabel?: string;
   titleLabel?: string;
   descriptionLabel?: React.ReactNode;
+  link?: string;
 }
 
 const ContactCard: React.FC<ContactCardProps> = ({
@@ -23,6 +24,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
       열정과 아이디어가 넘치는 당신을 기다립니다!
     </>
   ),
+  link = "/",
 }) => {
   return (
     <section className={`flex items-center justify-center ${bgColor}`}>
@@ -51,6 +53,7 @@ const ContactCard: React.FC<ContactCardProps> = ({
             textColor="text-white_900"
             label={buttonLabel}
             marginTop="mt-[50px]"
+            link={link}
           />
         </div>
       </div>
