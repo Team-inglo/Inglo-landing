@@ -19,7 +19,7 @@ const ProjectIntro = () => {
   ];
 
   return (
-    <section className="flex flex-col justify-center items-center py-[100px] px-[144px]">
+    <section className="flex flex-col justify-center items-center py-[100px] px-[144px] bg-[url('/images/project/radial_gradient.png')] bg-contain bg-center">
       <div className="flex flex-col justicy-center items-center gap-[24px]">
         <div className="relative">
           <Title />
