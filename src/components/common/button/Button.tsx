@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`w-[450px] h-[70px] flex justify-center items-center ${bgColor} rounded-[40px] ${textColor} text-[20px] font-extrabold ${marginTop}`}
+      className={`w-[450px] h-[70px] flex justify-center items-center ${bgColor} rounded-[40px] ${textColor} text-[20px] font-[600] ${marginTop}`}
     >
       {label}
     </button>
