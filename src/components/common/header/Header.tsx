@@ -4,19 +4,19 @@ import Link from "next/link";
 
 /**
  * @description
- * about us 페이지 헤더 컴포넌트
- * @component AboutusHeader
- * @returns {JSX.Element} AboutusHeader
+ * 공통 헤더 컴포넌트
+ * @component Header
+ * @returns {JSX.Element} Header
  * @since 2024.09.29
  */
 /**
- * Renders the header component for the aboutus section.
+ * Renders the header component for all page.
  * @returns The rendered header component.
  */
 
-const AboutusHeader = () => {
+const Header = () => {
   return (
-    <header className="p-[1.25rem] bg-light_green">
+    <header className="w-full p-[1.25rem] bg-transparent fixed top-0 left-0">
       <div className="py-[1.125rem] px-[2.5rem] flex justify-between items-center rounded-[1.375rem] bg-white">
         <div className="flex gap-[0.75rem]">
           <LogoIcon width={24} height={23} />
@@ -41,4 +41,4 @@ const AboutusHeader = () => {
   );
 };
 
-export default AboutusHeader;
+export default Header;

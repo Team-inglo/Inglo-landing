@@ -14,7 +14,7 @@ import LogoIcon from "@/images/inglo_logo.svg";
 
 const AboutusBanner = () => {
   return (
-    <section className="flex flex-col justify-items-center items-center gap-[0.5rem] py-[4.25rem] bg-light_green">
+    <section className="flex flex-col justify-items-center items-center gap-[0.5rem] pt-[11.75rem] pb-[4.25rem] bg-light_green">
       <LogoIcon width={70} height={70} />
       <h1 className="text-[4rem] text-light_black font-bold">About us</h1>
       <p className="text-[2rem] text-black leading-[3.75rem]">

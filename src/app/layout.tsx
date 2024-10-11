@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "../styles/reset.css";
 import { pretendard } from "./fonts";
+import Header from "@/components/common/header/Header";
 import Footer from "@/components/common/footer/Footer";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${pretendard.className} antialiased min-h-screen w-full`}
       >
+        <Header />
         {children}
         <Footer />
       </body>
