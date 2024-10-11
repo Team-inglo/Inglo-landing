@@ -23,17 +23,26 @@ const Header = () => {
           <LogoTextIcon width={55} height={24} />
         </div>
         <nav className="flex items-center gap-[4rem]">
-          <Link className="text-lg text-primary font-semibold" href="/aboutus">
+          <Link
+            className="text-lg text-primary hover-gradient-text font-semibold"
+            href="/aboutus"
+          >
             About us
           </Link>
-          <Link className="text-lg text-black font-semibold" href="/">
+          <Link
+            className="text-lg text-black hover-gradient-text font-semibold"
+            href="/"
+          >
             Project
           </Link>
-          <Link className="text-lg text-black font-semibold" href="/">
+          <Link
+            className="text-lg text-black hover-gradient-text font-semibold"
+            href="/"
+          >
             Blog
           </Link>
         </nav>
-        <button className="py-[1.125rem] px-[2rem] bg-primary rounded-[2.5rem] text-base font-semibold text-light_black">
+        <button className="py-[1.125rem] px-[2rem] bg-primary rounded-[2.5rem] text-base font-semibold text-light_black hover-gradient-button">
           Contact us
         </button>
       </div>

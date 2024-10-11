@@ -33,4 +33,15 @@ body {
   .no-scrollbar::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera */
   }
+
+  .hover-gradient-text:hover {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(98deg, #3f5ef4 0%, #00eb90 100%);
+  }
+
+  .hover-gradient-button:hover {
+    background-image: linear-gradient(98deg, #3f5ef4 0%, #00eb90 100%);
+    color: white;
+  }
 }
