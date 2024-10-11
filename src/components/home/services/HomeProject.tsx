@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import GiggleCard from "@/images/home/giggle_card.png";
-import Giggle from "@/images/home/giggle.png";
+import GiggleCard from "@/images/home/giggle_card.svg";
+import Giggle from "@/images/home/giggle.svg";
 import TitleBox from "@/images/home/project_title.png";
 import Button from "@/components/common/button/Button";
 
@@ -27,16 +27,12 @@ const HomeProject = () => {
     <section className="flex items-center justify-center bg-yellow_50 p-card_padding">
       <div className="w-[1440px] flex items-center justify-center py-[100px]">
         <div className="flex items-center gap-[50px]">
-          <Image
-            src={GiggleCard}
-            alt="giggle"
-            className="w-[588px] h-[588px]"
-          />
+          <GiggleCard />
           <div className="flex flex-col">
             <div className="flex flex-col justify-center gap-[24px] py-[24px]">
               <TitleSection />
               <TextSection />
-              <Image src={Giggle} alt="Giggle" className="w-[187px] h-[61px]" />
+              <Giggle />
             </div>
             <Button
               bgColor="bg-secondary"

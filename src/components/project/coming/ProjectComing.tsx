@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import Title from "@/images/project/project_title.svg";
-import GiggleCard1 from "@/images/project/giggle_card_1.png";
-import GiggleCard2 from "@/images/project/giggle_card_2.png";
+import GiggleCard1 from "@/images/project/giggle_card_1.svg";
+import GiggleCard2 from "@/images/project/giggle_card_2.svg";
 
 const ProjectComing = () => {
   return (
@@ -21,8 +21,8 @@ const ProjectComing = () => {
         </div>
       </div>
       <div className="w-[1152px] py-[50px] flex gap-[12px]">
-        <Image src={GiggleCard1} alt="giggle" className="w-[552px]" />
-        <Image src={GiggleCard2} alt="giggle" className="w-[582px]" />
+        <GiggleCard1 />
+        <GiggleCard2 />
       </div>
     </section>
   );

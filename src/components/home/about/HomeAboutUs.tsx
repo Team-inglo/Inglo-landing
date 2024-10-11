@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import TagImg from "@/images/home/aboutus_tag.png";
+import TagImg from "@/images/home/aboutus_tag.svg";
 import Button from "@/components/common/button/Button";
 
 const AboutUsTextBlock = () => {
@@ -40,7 +40,7 @@ const HomeAboutUs = () => {
             link="/aboutus"
           />
         </div>
-        <Image src={TagImg} alt="tag" className="w-[576px] h-[345px]" />
+        <TagImg />
       </div>
     </section>
   );
