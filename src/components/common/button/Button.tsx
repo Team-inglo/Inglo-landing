@@ -3,13 +3,13 @@
 import { useRouter } from "next/navigation";
 import React from "react";
 
-interface ButtonProps {
+type ButtonProps = {
   bgColor?: string;
   textColor?: string;
   label: string;
   marginTop?: string;
   link?: string;
-}
+};
 
 const Button: React.FC<ButtonProps> = ({
   bgColor = "bg-primary",

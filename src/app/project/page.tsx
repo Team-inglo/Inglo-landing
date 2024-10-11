@@ -1,5 +1,4 @@
-import AboutusHeader from "@/components/aboutus/header/AboutusHeader";
-import ContactCard from "@/components/common/contact_card/ContactCard";
+import ContactCard from "@/components/common/contactCard/ContactCard";
 import ProjectBackground from "@/components/project/background/ProjectBackground";
 import ProjectBanner from "@/components/project/banner/ProjectBanner";
 import ProjectComing from "@/components/project/coming/ProjectComing";
@@ -14,7 +13,6 @@ export const metadata = {
 const ProjectPage = () => {
   return (
     <>
-      <AboutusHeader />
       <main>
         <ProjectBanner />
         <ProjectIntro />

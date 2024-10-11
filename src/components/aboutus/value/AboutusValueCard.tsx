@@ -1,3 +1,5 @@
+import { valueType } from "@/types/aboutus/valueType";
+
 /**
  * @description
  * about us 페이지 핵심 가치의 카드 컴포넌트
@@ -10,15 +12,9 @@
  * @returns The rendered value card component.
  */
 
-interface AboutusValueCardProps {
-  icon: JSX.Element;
-  title: string;
-  content: JSX.Element;
-}
-
-const AboutusValueCard = ({ icon, title, content }: AboutusValueCardProps) => {
+const AboutusValueCard = ({ icon, title, content }: valueType) => {
   return (
-    <div className="p-[4rem] flex flex-col justify-center gap-[1.5rem] rounded-[1.25rem] shadow-card_green">
+    <div className="p-[4rem] flex flex-col justify-center gap-[1.5rem] rounded-[1.25rem] border-solid border-primary border-[1px]">
       {icon}
       <h6 className="text-[1.75rem] text-deep_gray font-bold">{title}</h6>
       <p className="text-base text-deep_gray">{content}</p>

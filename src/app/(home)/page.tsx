@@ -1,18 +1,12 @@
-"use client";
-import AboutusHeader from "@/components/aboutus/header/AboutusHeader";
-import ContactCard from "@/components/common/contact_card/ContactCard";
+import ContactCard from "@/components/common/contactCard/ContactCard";
 import HomeAboutUs from "@/components/home/about/HomeAboutUs";
 import HomeBlog from "@/components/home/blog/HomeBlog";
 import HomeIntro from "@/components/home/intro/HomeIntro";
 import HomeProject from "@/components/home/services/HomeProject";
-import { useRouter } from "next/navigation";
 
 const HomePage = () => {
-  const router = useRouter();
-
   return (
     <>
-      <AboutusHeader />
       <main>
         <HomeIntro />
         <HomeAboutUs />
