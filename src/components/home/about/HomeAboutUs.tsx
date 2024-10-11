@@ -24,7 +24,7 @@ const HomeAboutUs = () => {
       <div className="w-[1440px] flex items-center justify-center pt-[90px] pb-[100px]">
         <div className="flex flex-col items-start w-[576px] gap-[30px]">
           <div>
-            <h1 className="text-green_200 text-[48px] leading-[60px] font-[600]">
+            <h1 className="text-green_200 text-[48px] leading-[60px] font-[400]">
               Insight Global
             </h1>
             <h1 className="text-black text-[48px] leading-[60px] font-[600]">
