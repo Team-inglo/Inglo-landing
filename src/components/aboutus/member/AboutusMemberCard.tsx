@@ -29,7 +29,7 @@ const AboutusMemberCard = ({
   introduce,
 }: memberListType) => {
   return (
-    <div className="flex flex-col w-[25rem] bg-white rounded-[0.75rem] shadow-card_green">
+    <div className="flex flex-col min-w-[28.438rem] bg-white rounded-[0.75rem] whitespace-nowrap">
       <Image
         className="w-full h-[18.125rem] rounded-[0.75rem] object-cover"
         src={profile}

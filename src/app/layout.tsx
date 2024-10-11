@@ -3,9 +3,6 @@ import "./globals.css";
 import "../styles/reset.css";
 import { pretendard } from "./fonts";
 import Footer from "@/components/common/footer/Footer";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 export const metadata: Metadata = {
   title: {

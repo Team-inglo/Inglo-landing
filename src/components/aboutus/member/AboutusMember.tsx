@@ -1,9 +1,6 @@
 "use client";
 
 import AboutusMemberCard from "./AboutusMemberCard";
-import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore from "swiper";
-import { Autoplay } from "swiper/modules";
 import ProfileImage1 from "@/images/profile/한은서_프로필.png";
 import ProfileImage2 from "@/images/profile/윤혜정_프로필.jpg";
 import ProfileImage3 from "@/images/profile/박예선_프로필.png";
@@ -16,6 +13,8 @@ import ProfileImage9 from "@/images/profile/김현진_프로필.jpeg";
 import ProfileImage10 from "@/images/profile/문지원_프로필.jpeg";
 import ProfileImage11 from "@/images/profile/강승준_프로필.jpeg";
 import { StaticImageData } from "next/image";
+import { useHorizontalScroll } from "@/hooks/useHorizontalScroll";
+import { useRef } from "react";
 
 /**
  * @description
@@ -37,7 +36,7 @@ interface memberListType {
   introduce: string;
 }
 
-const memberList = [
+const memberList: memberListType[] = [
   {
     profile: ProfileImage1,
     keyword: "#차나핑",
@@ -117,13 +116,10 @@ const memberList = [
   },
 ];
 
-const chunkedMemberList: memberListType[][] = [];
-for (let i = 0; i < memberList.length; i += 3) {
-  chunkedMemberList.push(memberList.slice(i, i + 3));
-}
-
 const AboutusMember = () => {
-  SwiperCore.use([Autoplay]);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const events = useHorizontalScroll(scrollRef);
+
   return (
     <section className="flex flex-col justify-center items-center gap-[3rem] py-[6.25rem] bg-primary">
       <div className="flex flex-col justify-center items-center gap-[1.5rem]">
@@ -136,34 +132,23 @@ const AboutusMember = () => {
           Inglo 팀원들을 소개합니다
         </h3>
       </div>
-      <div className="w-full">
-        <Swiper
-          loop={true} // 슬라이드 루프
-          spaceBetween={0} // 슬라이스 사이 간격
-          slidesPerView={1} // 보여질 슬라이스 수
-          navigation={false} // prev, next button
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false, // 사용자 상호작용시 슬라이더 일시 정지 비활성
-          }}
-        >
-          {chunkedMemberList.map((members, idx) => (
-            <SwiperSlide key={idx}>
-              <div className="flex justify-center gap-[3rem] px-[9rem] py-[3.75rem]">
-                {members.map((member, idx) => (
-                  <AboutusMemberCard
-                    key={`member_${idx}`}
-                    profile={member.profile}
-                    keyword={member.keyword}
-                    name={member.name}
-                    position={member.position}
-                    introduce={member.introduce}
-                  />
-                ))}
-              </div>
-            </SwiperSlide>
+      <div
+        className="w-full overflow-x-scroll no-scrollbar"
+        ref={scrollRef}
+        {...events}
+      >
+        <div className="min-w-fit flex justify-center gap-[3rem] px-[9rem] py-[3.75rem]">
+          {memberList.map((member, idx) => (
+            <AboutusMemberCard
+              key={`member_${idx}`}
+              profile={member.profile}
+              keyword={member.keyword}
+              name={member.name}
+              position={member.position}
+              introduce={member.introduce}
+            />
           ))}
-        </Swiper>
+        </div>
       </div>
     </section>
   );
