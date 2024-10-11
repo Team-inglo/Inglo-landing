@@ -26,7 +26,7 @@ const MainText = () => (
 
 const HomeIntro = () => {
   return (
-    <section className="flex flex-col items-center gap-[32px] pt-[194px] h-[100vh] bg-custom_gradient">
+    <section className="flex flex-col items-center gap-[32px] pt-[194px] h-[100vh] bg-blue_gradient">
       <TitleSection />
       <Image src={HeadText} alt="꿈꾸는 개발자들의 아름다운 여정" />
       <MainText />
