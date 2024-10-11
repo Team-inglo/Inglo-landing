@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full p-[1.25rem] bg-transparent fixed top-0 left-0">
+    <header className="w-full p-[1.25rem] bg-transparent fixed top-0 left-0 z-30">
       <div className="py-[1.125rem] px-[2.5rem] flex justify-between items-center rounded-[1.375rem] bg-white">
         <div className="flex gap-[0.75rem]" onClick={goToHomePage}>
           <LogoIcon width={24} height={23} />
