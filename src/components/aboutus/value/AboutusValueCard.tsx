@@ -1,4 +1,4 @@
-import { valueType } from "@/interfaces/aboutus/valueType";
+import { valueType } from "@/types/aboutus/valueType";
 
 /**
  * @description

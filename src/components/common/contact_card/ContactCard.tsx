@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../button/Button";
 
-interface ContactCardProps {
+type ContactCardProps = {
   bgColor?: string;
   boxColor?: string;
   titleColor?: string;
@@ -9,7 +9,7 @@ interface ContactCardProps {
   titleLabel?: string;
   descriptionLabel?: React.ReactNode;
   link?: string;
-}
+};
 
 const ContactCard: React.FC<ContactCardProps> = ({
   bgColor = "bg-primary",

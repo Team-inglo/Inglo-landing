@@ -3,7 +3,7 @@ import CreativeIcon from "@/icons/creative_icon.svg";
 import ChallengeIcon from "@/icons/challenge_icon.svg";
 import SocialIcon from "@/icons/social_icon.svg";
 import CooperationIcon from "@/icons/cooperation_icon.svg";
-import { valueType } from "@/interfaces/aboutus/valueType";
+import { valueType } from "@/types/aboutus/valueType";
 
 /**
  * @description

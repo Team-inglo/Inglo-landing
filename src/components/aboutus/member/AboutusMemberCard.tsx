@@ -1,5 +1,5 @@
 // import GithubIcon from "@/icons/github_icon.svg";
-import { memberType } from "@/interfaces/aboutus/memberType";
+import { memberType } from "@/types/aboutus/memberType";
 import Image from "next/image";
 
 /**

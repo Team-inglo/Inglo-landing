@@ -5,7 +5,7 @@ import Title from "@/images/home/title_box.svg";
 import HeadText from "@/images/home/head_text.png";
 
 const BgLogo = () => (
-  <Image src={LogoImg} alt="Logo" className="bottom-0 z-0 w-[620px]" />
+  <Image src={LogoImg} alt="Logo" className="bottom-0 z-0 w-[620px]" priority />
 );
 
 const TitleSection = () => (

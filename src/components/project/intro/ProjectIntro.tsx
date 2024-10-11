@@ -60,8 +60,8 @@ const ProjectIntro = () => {
         src={GiggleMockup}
         alt="Giggle service"
         width={1152}
-        height={700}
         className="object-contain"
+        priority
       />
       <div className="w-[1152px] flex flex-col items-center justify-center gap-[36px] bg-yellow_100 rounded-[64px] pt-[64px] pb-[32px]">
         <p className="text-white_900 text-[28px] font-[400]">

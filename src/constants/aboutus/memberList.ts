@@ -9,7 +9,7 @@ import ProfileImage8 from "@/images/profile/장동겸_프로필.jpeg";
 import ProfileImage9 from "@/images/profile/김현진_프로필.jpeg";
 import ProfileImage10 from "@/images/profile/문지원_프로필.jpeg";
 import ProfileImage11 from "@/images/profile/강승준_프로필.jpeg";
-import { memberType } from "@/interfaces/aboutus/memberType";
+import { memberType } from "@/types/aboutus/memberType";
 
 const MEMBER_LIST: memberType[] = [
   {
