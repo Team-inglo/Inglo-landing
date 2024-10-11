@@ -15,8 +15,10 @@ const ProjectBackground = () => {
               ✦ backgound ✦
             </p>
           </div>
-          <h1 className="text-secondary text-[48px]">Giggle의 탄생배경</h1>
-          <div className="w-[558px] text-white_800 text-[28px] leading-[40px] whitespace-normal text-right">
+          <h1 className="text-secondary text-[48px] font-semibold">
+            Giggle의 탄생배경
+          </h1>
+          <div className="w-[558px] text-white_800 text-[28px] font-semibold leading-[40px] whitespace-normal text-right">
             외국인 유학생 20만 시대에, 아르바이트를 희망하는 유학생들이 증가하고
             있습니다. 그러나 불법 취업 건수 증가, 시간제 취업허가 미비, 정보
             부족 등의 문제로 어려움을 겪고 있는 학생들이 많습니다. 이를 해결하기

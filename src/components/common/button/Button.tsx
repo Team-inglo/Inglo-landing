@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`w-[450px] h-[70px] flex justify-center items-center ${bgColor} hover:bg-button_gradient rounded-[40px] ${textColor} hover:text-light_green text-[20px] font-extrabold ${marginTop} transition-colors duration-600`}
+      className={`w-[450px] h-[70px] flex justify-center items-center ${bgColor} hover:bg-button_gradient rounded-[40px] ${textColor} hover:text-light_green text-[20px] font-semibold ${marginTop} transition-colors duration-600`}
       onClick={handleClick}
     >
       {label}

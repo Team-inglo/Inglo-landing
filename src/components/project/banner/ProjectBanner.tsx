@@ -5,7 +5,7 @@ const ProjectBanner = () => {
   return (
     <section className="flex flex-col items-center justify-center bg-light_green pt-[168px] pb-[68px] gap-[8px]">
       <LogoImg width={70} height={70} />
-      <h1 className="text-light_black text-[60px] font-bold leading-[60px]">
+      <h1 className="text-light_black text-[60px] font-semibold leading-[60px]">
         Projects
       </h1>
       <h2 className="text-light_black text-[22px] font-normal leading-[32px]">

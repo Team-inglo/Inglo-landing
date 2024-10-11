@@ -2,10 +2,12 @@ import React from "react";
 import Image from "next/image";
 import LogoImg from "@/images/home/landing_logo.png";
 import Title from "@/images/home/title_box.svg";
-import HeadText from "@/images/home/head_text.png";
+import HeadText from "@/images/home/head_text.svg";
 
 const BgLogo = () => (
-  <Image src={LogoImg} alt="Logo" className="bottom-0 z-0 w-[620px]" priority />
+  <div className="relative h-[50vh] w-full">
+    <Image src={LogoImg} alt="Logo" fill className="object-contain" priority />
+  </div>
 );
 
 const TitleSection = () => (
@@ -28,7 +30,7 @@ const HomeIntro = () => {
   return (
     <section className="flex flex-col items-center gap-[32px] pt-[194px] h-[100vh] bg-blue_gradient">
       <TitleSection />
-      <Image src={HeadText} alt="꿈꾸는 개발자들의 아름다운 여정" />
+      <HeadText />
       <MainText />
       <BgLogo />
     </section>

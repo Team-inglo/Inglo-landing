@@ -34,11 +34,11 @@ const ContactCard: React.FC<ContactCardProps> = ({
         >
           <div>
             <h1
-              className={`${titleColor} text-[48px] leading-[60px] font-[600] mb-[12px]`}
+              className={`${titleColor} text-[48px] leading-[60px] font-[400] mb-[12px]`}
             >
               Join our Journey!
             </h1>
-            <h1 className="text-black text-[48px] leading-[60px] font-[600] mb-[12px]">
+            <h1 className="text-black text-[48px] leading-[60px] font-semibold mb-[12px]">
               {titleLabel}
             </h1>
             {descriptionLabel && (

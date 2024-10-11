@@ -14,8 +14,10 @@ const ProjectValue = () => {
               ✦ our value ✦
             </p>
           </div>
-          <h1 className="text-secondary text-[48px]">Giggle의 가치</h1>
-          <div className="w-[558px] text-white_800 text-[28px] leading-[40px] whitespace-normal">
+          <h1 className="text-secondary text-[48px] font-semibold">
+            Giggle의 가치
+          </h1>
+          <div className="w-[558px] text-white_800 text-[28px] font-semibold leading-[40px] whitespace-normal">
             Giggle은 외국인 유학생 맞춤형 아르바이트 플랫폼입니다. 기존
             플랫폼에서 매칭만 도와주는 것이 아닌, 사회초년생처럼 한국에 막
             들어온 유학생들도 앱 하나만으로 아르바이트를 할 수 있도록 더욱

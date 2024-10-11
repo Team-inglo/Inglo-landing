@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Icons from "@/images/home/blog_icons.png";
+import Icons from "@/images/home/blog_icons.svg";
 import Button from "@/components/common/button/Button";
 
 const BlogTextSection = () => (
@@ -21,7 +21,7 @@ const HomeBlog = () => {
         <div className="w-[1152px] rounded-[80px] flex flex-col justify-center items-center py-[80px] bg-white gap-[40px]">
           <BlogTextSection />
 
-          <Image src={Icons} alt="icons" className="w-[1120px]" />
+          <Icons />
 
           <Button
             bgColor="bg-primary"
