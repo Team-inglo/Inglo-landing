@@ -1,4 +1,4 @@
-import TimelineContent from "@/images/timeline_content.svg";
+import TimelineContent from "@/images/aboutus/timeline_content.svg";
 
 /**
  * @description
@@ -29,7 +29,7 @@ const AboutusTimeline = () => {
             이제는 세상을 변화시키는 큰 꿈으로 🚀
           </p>
         </div>
-        <div className="mt-[1.25rem] flex justify-center items-center bg-auto bg-top bg-no-repeat bg-[url('/images/timeline_bar.svg')]">
+        <div className="mt-[1.25rem] flex justify-center items-center bg-auto bg-top bg-no-repeat bg-[url('/images/aboutus/timeline_bar.svg')]">
           <TimelineContent />
         </div>
       </section>

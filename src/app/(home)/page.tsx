@@ -1,4 +1,4 @@
-import ContactCard from "@/components/common/contact_card/ContactCard";
+import ContactCard from "@/components/common/contactCard/ContactCard";
 import HomeAboutUs from "@/components/home/about/HomeAboutUs";
 import HomeBlog from "@/components/home/blog/HomeBlog";
 import HomeIntro from "@/components/home/intro/HomeIntro";
