@@ -3,6 +3,7 @@ import CreativeIcon from "@/icons/creative_icon.svg";
 import ChallengeIcon from "@/icons/challenge_icon.svg";
 import SocialIcon from "@/icons/social_icon.svg";
 import CooperationIcon from "@/icons/cooperation_icon.svg";
+import { valueType } from "@/interfaces/aboutus/valueType";
 
 /**
  * @description
@@ -16,7 +17,7 @@ import CooperationIcon from "@/icons/cooperation_icon.svg";
  * @returns The rendered value component.
  */
 
-const valueList = [
+const valueList: valueType[] = [
   {
     icon: <CreativeIcon width={60} height={60} />,
     title: "창의적 문제 해결",

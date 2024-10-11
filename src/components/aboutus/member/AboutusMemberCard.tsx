@@ -1,5 +1,6 @@
 // import GithubIcon from "@/icons/github_icon.svg";
-import Image, { StaticImageData } from "next/image";
+import { memberType } from "@/interfaces/aboutus/memberType";
+import Image from "next/image";
 
 /**
  * @description
@@ -13,21 +14,13 @@ import Image, { StaticImageData } from "next/image";
  * @returns The rendered member card component.
  */
 
-interface memberListType {
-  profile: StaticImageData;
-  keyword: string;
-  name: string;
-  position: string;
-  introduce: string;
-}
-
 const AboutusMemberCard = ({
   profile,
   keyword,
   name,
   position,
   introduce,
-}: memberListType) => {
+}: memberType) => {
   return (
     <div className="flex flex-col min-w-[28.438rem] bg-white rounded-[0.75rem] whitespace-nowrap">
       <Image
