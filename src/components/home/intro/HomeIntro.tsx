@@ -6,13 +6,7 @@ import HeadText from "@/images/home/head_text.svg";
 
 const BgLogo = () => (
   <div className="relative h-[50vh] w-full">
-    <Image
-      src={LogoImg}
-      alt="Logo"
-      layout="fill"
-      objectFit="contain"
-      priority
-    />
+    <Image src={LogoImg} alt="Logo" fill className="object-contain" priority />
   </div>
 );
 
