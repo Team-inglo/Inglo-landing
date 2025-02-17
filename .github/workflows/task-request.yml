@@ -20,27 +20,25 @@ jobs:
           JSON_FILE=$(mktemp)
           TITLE_MATCH=false
 
+          # 제목이 '✅ Task Request -'로 시작하는지 확인
           if [[ "$ISSUE_TITLE" =~ ^✅\ Task\ Request\ - ]]; then
             TITLE_MATCH=true
           fi
 
+          # 조건 만족 시 Discord 알림 전송
           if [[ "$TITLE_MATCH" == "true" ]]; then
-            cat > $JSON_FILE <<EOF
-            {
-              "content": "📢 **이슈가 감지되었습니다!**\n👤 **담당자:** $ASSIGNEE",
-              "embeds": [
-                {
-                  "title": "🔗 [GitHub 이슈 링크]($ISSUE_URL)",
-                  "description": "**이슈 제목:** $ISSUE_TITLE",
-                  "color": 15258703,
-                  "footer": {
-                    "text": "GitHub Actions | Issue Alert"
-                  },
-                  "timestamp": "$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-                }
-              ]
-            }
-            EOF
+            echo '{' > $JSON_FILE
+            echo '  "content": "📢 **이슈가 감지되었습니다!**",' >> $JSON_FILE
+            echo '  "embeds": [' >> $JSON_FILE
+            echo '    {' >> $JSON_FILE
+            echo '      "title": "🔗 [GitHub 이슈 링크]('$ISSUE_URL')",' >> $JSON_FILE
+            echo '      "description": "**이슈 제목:** '$ISSUE_TITLE'",' >> $JSON_FILE
+            echo '      "color": 15258703,' >> $JSON_FILE
+            echo '      "footer": {"text": "GitHub Actions | Issue Alert"},' >> $JSON_FILE
+            echo '      "timestamp": "'$(date -u +'%Y-%m-%dT%H:%M:%SZ')'"' >> $JSON_FILE
+            echo '    }' >> $JSON_FILE
+            echo '  ]' >> $JSON_FILE
+            echo '}' >> $JSON_FILE
 
             curl -X POST -H 'Content-type: application/json' --data @$JSON_FILE $WEBHOOK_URL
             rm $JSON_FILE
