@@ -20,7 +20,7 @@ jobs:
           JSON_FILE=$(mktemp)
           TITLE_MATCH=false
 
-          if [[ "$ISSUE_TITLE" == ✅ Task Request -* ]]; then
+          if [[ "$ISSUE_TITLE" =~ ^✅\ Task\ Request\ - ]]; then
             TITLE_MATCH=true
           fi
 
