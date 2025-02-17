@@ -1,44 +1,37 @@
-name: Discord Notification on Issue & Pull Request
+name: Notify Discord on Assigned Issues or Task Requests
 
 on:
   issues:
-    types: [opened, labeled] # 새로운 이슈가 생성되거나 Label이 추가될 때 작동
-  pull_request:
-    types: [opened, reopened] # PR이 열렸을 때 작동
+    types: [assigned, opened] # 이슈가 할당되거나 새로 생성될 때 실행
 
 jobs:
-  notify-on-event:
+  notify-discord:
     runs-on: ubuntu-latest
     steps:
       - name: Set Environment Variables
         run: |
-          echo "EVENT_TYPE=${{ github.event_name }}" >> $GITHUB_ENV
-          echo "ISSUE_BODY=${{ github.event.issue.body }}" >> $GITHUB_ENV
-          echo "ISSUE_LABELS=$(echo '${{ toJson(github.event.issue.labels) }}' | jq -r '.[].name')" >> $GITHUB_ENV
-          echo "PR_TITLE=${{ github.event.pull_request.title }}" >> $GITHUB_ENV
-          echo "PR_URL=${{ github.event.pull_request.html_url }}" >> $GITHUB_ENV
-          echo "PR_AUTHOR=${{ github.event.sender.login }}" >> $GITHUB_ENV
+          echo "ASSIGNEE=${{ github.event.issue.assignee.login }}" >> $GITHUB_ENV
           echo "ISSUE_URL=${{ github.event.issue.html_url }}" >> $GITHUB_ENV
-          echo "ISSUE_AUTHOR=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
+          echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
           echo "WEBHOOK_URL=${{ secrets.DISCORD_WEBHOOK_URL }}" >> $GITHUB_ENV
 
-      - name: Filter Events & Send Notification
+      - name: Check Assignee or Title & Send Discord Notification
         run: |
           JSON_FILE=$(mktemp)
+          TITLE_MATCH=false
 
-          # 특정 Label이 있는 경우만 알림 전송
-          if [[ "$EVENT_TYPE" == "issues" && "$ISSUE_LABELS" =~ "task-request" ]]; then
+          if [[ "$ISSUE_TITLE" == ✅ Task Request -* ]]; then
+            TITLE_MATCH=true
+          fi
+
+          if [[ "$TITLE_MATCH" == "true" ]]; then
             cat > $JSON_FILE <<EOF
             {
-              "content": "**📢 새로운 작업 요청이 등록되었습니다!**",
+              "content": "📢 **이슈가 감지되었습니다!**\n👤 **담당자:** $ASSIGNEE",
               "embeds": [
                 {
-                  "author": {
-                    "name": "$ISSUE_AUTHOR",
-                    "icon_url": "https://github.com/$ISSUE_AUTHOR.png"
-                  },
                   "title": "🔗 [GitHub 이슈 링크]($ISSUE_URL)",
-                  "description": "이슈 템플릿을 기반으로 생성된 요청입니다.",
+                  "description": "**이슈 제목:** $ISSUE_TITLE",
                   "color": 15258703,
                   "footer": {
                     "text": "GitHub Actions | Issue Alert"
@@ -48,7 +41,7 @@ jobs:
               ]
             }
             EOF
-            curl -X POST -H 'Content-type: application/json' --data @$JSON_FILE $WEBHOOK_URL
-          fi
 
-          rm $JSON_FILE
+            curl -X POST -H 'Content-type: application/json' --data @$JSON_FILE $WEBHOOK_URL
+            rm $JSON_FILE
+          fi
